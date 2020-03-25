@@ -1,0 +1,61 @@
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+<h3><b>I – Questions sur l'article </b></h3>
+<br />
+
+Répond aux questions suivante sur la forme de l'article.
+<br /><br />
+<form name="titre">
+        <b> Quel est le titre de l'article?</b>
+        <input size="35" value="Titre de l'article" id="txt_titre" type="text" /><br />
+        <b> De quel média vient l'article ?</b>
+        <input size="35" value="Titre du journal" id="txt_journal" type="text" /><br />
+        <b>Qui est l'auteur de l'article ? (signature) </b>
+        <input size="35" value="Nom de l'auteur" id="txt_auteur" type="text" />
+        <br /><br />
+        <b>De quand date l'article ? (date de publication) </b>
+        <input size="35" value="date de publication" id="txt_date" type="text" /><br /><br />
+        <b> Quel est le sujet de l'article ?</b>
+        <input size="35" value="Sujet de l'article" id="txt_sujet" type="text" /><br /><br />
+        <b> Quelle est la source d'information de l'article ? (de qui/quoi le journaliste a appris l'information)</b>
+        <input size="35" value="Source de l'article" id="txt_source" type="text" /><br /><br />
+  </form>
+
+Répond aux questions suivantes, appelées les 5W, sur le contenu de l'article.
+<br /><br />
+  
+<form name="5W">
+        <b> Quel est l'événement raconté par l'article (What/quoi?) ?</b>
+        <input size="35" value="Quoi" id="txt_quoi" type="text" /><br />
+        <b> Quand est-ce que cela s'est passé (When/quand ?) </b>
+        <input size="35" value="Quand" id="txt_quand" type="text" />
+        <br /><br />
+        <b> Où se passe cet évènement (Where/où?) </b>
+        <input size="35" value="ou" id="txt_ou" type="text" />
+        <br /><br />
+        <b> Qui est l'acteur de cet évènement(Who/qui?) ? </b>
+        <input size="35" value="qui" id="txt_qui" type="text" />
+        <br /><br />
+        <b> Pourquoi est-ce que cet acteur a agit ainsi (Why/pourquoi?) ?</b>
+        <input size="35" value="pourquoi" id="txt_pourquoi" type="text" />
+        <br /><br />
+  </form>
+
+  
+
+<form name="analyse">
+        <input type="button" onclick="myCritic()" value="Générer l'analyse" />
+        <input type="button" onclick="document.forms[0].reset();document.forms[1].reset();document.forms[2].reset();document.forms[3].reset();" value="Rétablir les valeurs par defaut" />
+  <br /><br />
+  
+  <b><span color="red" style="color: red;">Avant de copier l'analyse : </span></b><br />
+  - relis-la et corrige les éventuelles coquilles<br />
+
+  
+        <textarea id="order" cols="65" rows="10" readonly="readonly"></textarea>
+</form>
+<script type="text/javascript">// <![CDATA[
+function myCritic() {
+  document.getElementById("order").value = "Cet article, dont le titre est" document.getElementById("txt_titre").value + ", a été publié par " + document.getElementById("txt_journal").value + ", lle " document.getElementById("txt_date").value + ". Il a été écrit par " + document.getElementById("txt_auteur").value + ". Ses sources viennent " + document.getElementById("txt_source").value +". " <br /> "L'article raconte que " + document.getElementById("txt_quoi").value + ". En " + document.getElementById("txt_quand").value + ", au "+ document.getElementById("txt_ou").value +", un "+ document.getElementById("txt_qui").value + " a été condamné pour "+ document.getElementById("txt_pourquoi").value + ". "
+}
+// ]]></script>
