@@ -8,7 +8,7 @@
         <body>
 <h3><b>I – Questions sur la forme de l'article </b></h3>
 <br />
-       
+       Répondez sans faire de phrases.
 
 <form name="titre">
 <b> Quel est le titre de l'article?</b>
@@ -23,10 +23,10 @@
 </form>                                                                                          
 <form name="source">                                                                                 
 <b> Quelle est la source d'information de l'article ? (de qui/quoi le journaliste a appris l'information)</b>
-<input type="radio" name="source" value="d'un autre journaliste" />journaliste
-<input type="radio" name="source" value="du gouvernement" />gouvernement
-<input type="radio" name="source" value="d'un témoin" />témoin
-<input type="radio" name="source" value="d'un tribunal" />tribunal
+<input type="radio" name="source" value="d'un autre journaliste" />d'un autre journaliste
+<input type="radio" name="source" value="du gouvernement" />du gouvernement
+<input type="radio" name="source" value="d'un témoin" />d'un témoin
+<input type="radio" name="source" value="d'un tribunal" />d'un tribunal
 <input type="radio" name="source" value="non indiqué" />non indiqué
 </form>
 
@@ -78,7 +78,7 @@ function myCritic() {
                 }
         }
         
-  document.getElementById("order").value = "Cet article, dont le titre est" + document.getElementById("txt_titre").value + ", a été publié par" + document.getElementById("txt_journal").value + ", le " + document.getElementById("txt_date").value + ". Il a été écrit par" + document.getElementById("txt_auteur").value + ". Ses sources viennent " + txt_source +". L'article raconte que" + document.getElementById("txt_quoi").value + ". En " + document.getElementById("txt_quand").value + ", au " + document.getElementById("txt_ou").value + ", un " + document.getElementById("txt_qui").value + " a été condamné pour "+ document.getElementById("txt_pourquoi").value + ". ";
+  document.getElementById("order").value = "Cet article, dont le titre est " + document.getElementById("txt_titre").value + ", a été publié par " + document.getElementById("txt_journal").value + ", le " + document.getElementById("txt_date").value + ". Il a été écrit par " + document.getElementById("txt_auteur").value + ". Ses sources viennent " + txt_source +". L'article raconte que " + document.getElementById("txt_quoi").value + ". En " + document.getElementById("txt_quand").value + ", au " + document.getElementById("txt_ou").value + ", un " + document.getElementById("txt_qui").value + " a été condamné pour "+ document.getElementById("txt_pourquoi").value + ". ";
 }
 // ]]></script>
         </body>
